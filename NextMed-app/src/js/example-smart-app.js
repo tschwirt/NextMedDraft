@@ -66,7 +66,7 @@
           p.hdl = getQuantityValueAndUnit(hdl[0]);
           p.ldl = getQuantityValueAndUnit(ldl[0]);
 
-          p.conditions = conditions; 
+          p.conditions = conditions;
 
           ret.resolve(p);
         });
@@ -146,5 +146,34 @@
     $('#hdl').html(p.hdl);
     $('#conditions').html(p.conditions);
   };
+
+  window.displayConditions = function (c) {
+    const conditionDiv = document.querySelector('div.conditions');
+    conditionTable = document.createElement('table');
+    c.forEach(condition => {
+      let conditionRow = document.createElement('tr');
+      let conditionName = document.createElement('td');
+      let dateRecorded = document.createElement('td');
+
+      conditionName.innerText = condition.code.text;
+      dateRecorded.innerText = condition.dateRecorded;
+
+      conditionRow.append(conditionName, dateRecorded);
+
+      let codes = condition.code.coding;
+      codes.forEach(code => {
+        let codeData = document.createElement('td');
+        codeData.innerText = code.code + " (" + code.system + ")";
+        conditionRow.append(codeData);
+      });
+
+      let conditionText = document.createElement('td');
+      conditionText.innerHTML = condition.text;
+
+      conditionRow.append(conditionText);
+      conditionTable.append(conditionRow);
+      conditionDiv.append(conditionTable);
+    });
+  }
 
 })(window);
