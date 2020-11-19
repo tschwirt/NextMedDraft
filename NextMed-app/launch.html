@@ -3,7 +3,11 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel='stylesheet' type='text/css' href='./src/css/example-smart-app.css'>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./src/css/example-smart-app.css"
+    />
     <!--
       Temporarily disable cerner-smart-embeddable-lib
       <link rel='stylesheet' type='text/css' href='./lib/css/cerner-smart-embeddable-lib-1.0.0.min.css'>
@@ -19,15 +23,32 @@
     -->
 
     <!-- FHIR Client JS Library -->
-    <script src='./lib/js/fhir-client-v0.1.12.js'></script>
+    <script src="./lib/js/fhir-client-v0.1.12.js"></script>
 
     <!-- Prevent session bleed caused by single threaded embedded browser and sessionStorage API -->
     <!-- https://github.com/cerner/fhir-client-cerner-additions -->
-    <script src='./lib/js/fhir-client-cerner-additions-1.0.0.js'></script>
+    <script src="./lib/js/fhir-client-cerner-additions-1.0.0.js"></script>
     <script>
+      scopes = [
+        "launch",
+        "online_access",
+        "openid",
+        "profile",
+        "patient/AllergyIntolerance.read",
+        "patient/CarePlan.read",
+        "patient/Condition.read",
+        "patient/DiagnosticReport.read",
+        "patient/Goal.read",
+        "patient/MedicationOrder.read",
+        "patient/Observation.read",
+        "patient/Patient.read",
+        "patient/Procedure.read",
+      ];
+      scopesString = scopes.join(' ');
+
       FHIR.oauth2.authorize({
-        'client_id': '6191ef26-b11e-4aed-9638-925ce6f29e5d',
-        'scope':  'patient/Patient.read patient/Observation.read launch online_access openid profile'
+        client_id: "6191ef26-b11e-4aed-9638-925ce6f29e5d",
+        scope: scopesString,
       });
     </script>
     <div class="spinner">
