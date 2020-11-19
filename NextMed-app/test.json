@@ -1,0 +1,568 @@
+{
+  "resourceType": "Bundle",
+  "id": "aba554da-d94b-471d-b0ed-8e7505e87ff6",
+  "type": "searchset",
+  "total": 10,
+  "link": [
+    {
+      "relation": "self",
+      "url": "https://fhir-ehr-code.cerner.com/dstu2/ec2458f2-1e24-41c8-b71b-0e701af7583d/Condition?patient=12742400"
+    }
+  ],
+  "entry": [
+    {
+      "fullUrl": "https://fhir-ehr-code.cerner.com/dstu2/ec2458f2-1e24-41c8-b71b-0e701af7583d/Condition/d2572741789",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "d2572741789",
+        "meta": {
+          "versionId": "2572741789",
+          "lastUpdated": "2020-11-18T23:16:46.000Z"
+        },
+        "text": {
+          "status": "generated",
+          "div": "\u003Cdiv\u003E\u003Cp\u003E\u003Cb\u003ECondition\u003C/b\u003E\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EPatient\u003C/b\u003E: PETERS, TIM A\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EDiagnosis\u003C/b\u003E: Acne keloid, Acne keloid\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EClinical Status\u003C/b\u003E: Active\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EVerification Status\u003C/b\u003E: Confirmed\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EOnset\u003C/b\u003E: Nov 18, 2020 11:16 P.M. UTC\u003C/p\u003E\u003C/div\u003E"
+        },
+        "patient": {
+          "reference": "Patient/12742400",
+          "display": "PETERS, TIM A"
+        },
+        "encounter": { "reference": "Encounter/97953530" },
+        "asserter": {
+          "reference": "Practitioner/12742069",
+          "display": "Portal, Portal"
+        },
+        "dateRecorded": "2020-11-18",
+        "code": {
+          "coding": [
+            {
+              "system": "http://e-imo.com/products/problem-it",
+              "code": "37309",
+              "display": "Acne keloid",
+              "userSelected": false
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "238746008",
+              "display": "Acne keloid (disorder)",
+              "userSelected": false
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "L73.0",
+              "display": "Acne keloid",
+              "userSelected": false
+            }
+          ],
+          "text": "Acne keloid"
+        },
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/condition-category",
+              "code": "diagnosis",
+              "display": "Diagnosis"
+            }
+          ],
+          "text": "Diagnosis"
+        },
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "onsetDateTime": "2020-11-18T23:16:45.000Z"
+      }
+    },
+    {
+      "fullUrl": "https://fhir-ehr-code.cerner.com/dstu2/ec2458f2-1e24-41c8-b71b-0e701af7583d/Condition/d2572741783",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "d2572741783",
+        "meta": {
+          "versionId": "2572741783",
+          "lastUpdated": "2020-11-18T22:54:05.000Z"
+        },
+        "text": {
+          "status": "generated",
+          "div": "\u003Cdiv\u003E\u003Cp\u003E\u003Cb\u003ECondition\u003C/b\u003E\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EPatient\u003C/b\u003E: PETERS, TIM A\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EDiagnosis\u003C/b\u003E: Acne agminata, Acne Agminata\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EClinical Status\u003C/b\u003E: Active\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EVerification Status\u003C/b\u003E: Confirmed\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EOnset\u003C/b\u003E: Nov 18, 2020 10:54 P.M. UTC\u003C/p\u003E\u003C/div\u003E"
+        },
+        "patient": {
+          "reference": "Patient/12742400",
+          "display": "PETERS, TIM A"
+        },
+        "encounter": { "reference": "Encounter/97953530" },
+        "asserter": {
+          "reference": "Practitioner/12742069",
+          "display": "Portal, Portal"
+        },
+        "dateRecorded": "2020-11-18",
+        "code": {
+          "coding": [
+            {
+              "system": "http://e-imo.com/products/problem-it",
+              "code": "30124179",
+              "display": "Acne Agminata",
+              "userSelected": false
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "238752009",
+              "display": "Acne agminata (disorder)",
+              "userSelected": false
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "A18.4",
+              "display": "Tuberculosis of skin and subcutaneous tissue",
+              "userSelected": false
+            }
+          ],
+          "text": "Acne agminata"
+        },
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/condition-category",
+              "code": "diagnosis",
+              "display": "Diagnosis"
+            }
+          ],
+          "text": "Diagnosis"
+        },
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "onsetDateTime": "2020-11-18T22:54:04.000Z"
+      }
+    },
+    {
+      "fullUrl": "https://fhir-ehr-code.cerner.com/dstu2/ec2458f2-1e24-41c8-b71b-0e701af7583d/Condition/d2572567983",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "d2572567983",
+        "meta": {
+          "versionId": "2572567983",
+          "lastUpdated": "2020-09-18T19:03:41.000Z"
+        },
+        "text": {
+          "status": "generated",
+          "div": "\u003Cdiv\u003E\u003Cp\u003E\u003Cb\u003ECondition\u003C/b\u003E\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EPatient\u003C/b\u003E: PETERS, TIM A\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EDiagnosis\u003C/b\u003E: Chronic pulmonary embolism, Chronic pulmonary embolism\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EClinical Status\u003C/b\u003E: Active\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EVerification Status\u003C/b\u003E: Confirmed\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EOnset\u003C/b\u003E: Sep 18, 2020  7:03 P.M. UTC\u003C/p\u003E\u003C/div\u003E"
+        },
+        "patient": {
+          "reference": "Patient/12742400",
+          "display": "PETERS, TIM A"
+        },
+        "encounter": { "reference": "Encounter/97953530" },
+        "asserter": {
+          "reference": "Practitioner/12742069",
+          "display": "Portal, Portal"
+        },
+        "dateRecorded": "2020-09-18",
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "I27.82",
+              "display": "Chronic pulmonary embolism",
+              "userSelected": true
+            }
+          ],
+          "text": "Chronic pulmonary embolism"
+        },
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/condition-category",
+              "code": "diagnosis",
+              "display": "Diagnosis"
+            }
+          ],
+          "text": "Diagnosis"
+        },
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "onsetDateTime": "2020-09-18T19:03:44.000Z"
+      }
+    },
+    {
+      "fullUrl": "https://fhir-ehr-code.cerner.com/dstu2/ec2458f2-1e24-41c8-b71b-0e701af7583d/Condition/p73109403",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "p73109403",
+        "meta": {
+          "versionId": "73109403",
+          "lastUpdated": "2020-11-18T04:19:19.000Z"
+        },
+        "text": {
+          "status": "generated",
+          "div": "\u003Cdiv\u003E\u003Cp\u003E\u003Cb\u003ECondition\u003C/b\u003E\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EPatient\u003C/b\u003E: PETERS, TIM A\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EProblem\u003C/b\u003E: Chronic pulmonary embolism, Chronic pulmonary embolism (disorder)\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EClinical Status\u003C/b\u003E: Active\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EVerification Status\u003C/b\u003E: Confirmed\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EResolved\u003C/b\u003E: False\u003C/p\u003E\u003C/div\u003E"
+        },
+        "patient": {
+          "reference": "Patient/12742400",
+          "display": "PETERS, TIM A"
+        },
+        "asserter": {
+          "reference": "Practitioner/12742069",
+          "display": "Portal, Portal"
+        },
+        "dateRecorded": "2020-11-18",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "133971000119108",
+              "display": "Chronic pulmonary embolism (disorder)",
+              "userSelected": false
+            },
+            {
+              "system": "http://e-imo.com/products/problem-it",
+              "code": "814141",
+              "display": "Chronic pulmonary embolism",
+              "userSelected": false
+            }
+          ],
+          "text": "Chronic pulmonary embolism"
+        },
+        "category": {
+          "coding": [
+            {
+              "system": "http://argonaut.hl7.org",
+              "code": "problem",
+              "display": "Problem"
+            }
+          ],
+          "text": "Problem"
+        },
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "abatementBoolean": false
+      }
+    },
+    {
+      "fullUrl": "https://fhir-ehr-code.cerner.com/dstu2/ec2458f2-1e24-41c8-b71b-0e701af7583d/Condition/d2572741785",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "d2572741785",
+        "meta": {
+          "versionId": "2572741785",
+          "lastUpdated": "2020-11-18T23:06:18.000Z"
+        },
+        "text": {
+          "status": "generated",
+          "div": "\u003Cdiv\u003E\u003Cp\u003E\u003Cb\u003ECondition\u003C/b\u003E\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EPatient\u003C/b\u003E: PETERS, TIM A\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EDiagnosis\u003C/b\u003E: Acne conglobata, Acne conglobata (disorder)\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EClinical Status\u003C/b\u003E: Active\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EVerification Status\u003C/b\u003E: Confirmed\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EOnset\u003C/b\u003E: Nov 18, 2020 11:06 P.M. UTC\u003C/p\u003E\u003C/div\u003E"
+        },
+        "patient": {
+          "reference": "Patient/12742400",
+          "display": "PETERS, TIM A"
+        },
+        "encounter": { "reference": "Encounter/97953530" },
+        "asserter": {
+          "reference": "Practitioner/12742069",
+          "display": "Portal, Portal"
+        },
+        "dateRecorded": "2020-11-18",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "42228007",
+              "display": "Acne conglobata (disorder)",
+              "userSelected": false
+            },
+            {
+              "system": "http://e-imo.com/products/problem-it",
+              "code": "809",
+              "display": "Acne conglobata",
+              "userSelected": false
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "L70.1",
+              "display": "Acne conglobata",
+              "userSelected": false
+            }
+          ],
+          "text": "Acne conglobata"
+        },
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/condition-category",
+              "code": "diagnosis",
+              "display": "Diagnosis"
+            }
+          ],
+          "text": "Diagnosis"
+        },
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "onsetDateTime": "2020-11-18T23:06:17.000Z"
+      }
+    },
+    {
+      "fullUrl": "https://fhir-ehr-code.cerner.com/dstu2/ec2458f2-1e24-41c8-b71b-0e701af7583d/Condition/d2572741791",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "d2572741791",
+        "meta": {
+          "versionId": "2572741791",
+          "lastUpdated": "2020-11-18T23:19:41.000Z"
+        },
+        "text": {
+          "status": "generated",
+          "div": "\u003Cdiv\u003E\u003Cp\u003E\u003Cb\u003ECondition\u003C/b\u003E\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EPatient\u003C/b\u003E: PETERS, TIM A\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EDiagnosis\u003C/b\u003E: Acne detergicans, Acne detergicans\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EClinical Status\u003C/b\u003E: Active\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EVerification Status\u003C/b\u003E: Confirmed\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EOnset\u003C/b\u003E: Nov 18, 2020 11:19 P.M. UTC\u003C/p\u003E\u003C/div\u003E"
+        },
+        "patient": {
+          "reference": "Patient/12742400",
+          "display": "PETERS, TIM A"
+        },
+        "encounter": { "reference": "Encounter/97953530" },
+        "asserter": {
+          "reference": "Practitioner/12742069",
+          "display": "Portal, Portal"
+        },
+        "dateRecorded": "2020-11-18",
+        "code": {
+          "coding": [
+            {
+              "system": "http://e-imo.com/products/problem-it",
+              "code": "837",
+              "display": "Acne detergicans",
+              "userSelected": false
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "77816008",
+              "display": "Acne detergicans (disorder)",
+              "userSelected": false
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "L70.8",
+              "display": "Other acne",
+              "userSelected": false
+            }
+          ],
+          "text": "Acne detergicans"
+        },
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/condition-category",
+              "code": "diagnosis",
+              "display": "Diagnosis"
+            }
+          ],
+          "text": "Diagnosis"
+        },
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "onsetDateTime": "2020-11-18T23:19:41.000Z"
+      }
+    },
+    {
+      "fullUrl": "https://fhir-ehr-code.cerner.com/dstu2/ec2458f2-1e24-41c8-b71b-0e701af7583d/Condition/p73110781",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "p73110781",
+        "meta": {
+          "versionId": "73110781",
+          "lastUpdated": "2020-11-19T14:55:50.000Z"
+        },
+        "text": {
+          "status": "generated",
+          "div": "\u003Cdiv\u003E\u003Cp\u003E\u003Cb\u003ECondition\u003C/b\u003E\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EPatient\u003C/b\u003E: PETERS, TIM A\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EProblem\u003C/b\u003E: Tobacco use, Tobacco user (finding)\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EClinical Status\u003C/b\u003E: Active\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EVerification Status\u003C/b\u003E: Provisional\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EResolved\u003C/b\u003E: False\u003C/p\u003E\u003C/div\u003E"
+        },
+        "patient": {
+          "reference": "Patient/12742400",
+          "display": "PETERS, TIM A"
+        },
+        "asserter": {
+          "reference": "Practitioner/1",
+          "display": "SYSTEM, SYSTEM Cerner"
+        },
+        "dateRecorded": "2020-11-19",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "110483000",
+              "display": "Tobacco user (finding)",
+              "userSelected": true
+            }
+          ],
+          "text": "Tobacco use"
+        },
+        "category": {
+          "coding": [
+            {
+              "system": "http://argonaut.hl7.org",
+              "code": "problem",
+              "display": "Problem"
+            }
+          ],
+          "text": "Problem"
+        },
+        "clinicalStatus": "active",
+        "verificationStatus": "provisional",
+        "abatementBoolean": false
+      }
+    },
+    {
+      "fullUrl": "https://fhir-ehr-code.cerner.com/dstu2/ec2458f2-1e24-41c8-b71b-0e701af7583d/Condition/d2572567917",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "d2572567917",
+        "meta": {
+          "versionId": "2572567917",
+          "lastUpdated": "2020-09-18T18:58:35.000Z"
+        },
+        "text": {
+          "status": "generated",
+          "div": "\u003Cdiv\u003E\u003Cp\u003E\u003Cb\u003ECondition\u003C/b\u003E\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EPatient\u003C/b\u003E: PETERS, TIM A\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EDiagnosis\u003C/b\u003E: Chronic atrial fibrillation, Chronic atrial fibrillation\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EClinical Status\u003C/b\u003E: Active\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EVerification Status\u003C/b\u003E: Confirmed\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EOnset\u003C/b\u003E: Sep 18, 2020  6:58 P.M. UTC\u003C/p\u003E\u003C/div\u003E"
+        },
+        "patient": {
+          "reference": "Patient/12742400",
+          "display": "PETERS, TIM A"
+        },
+        "encounter": { "reference": "Encounter/97953530" },
+        "asserter": {
+          "reference": "Practitioner/12742069",
+          "display": "Portal, Portal"
+        },
+        "dateRecorded": "2020-09-18",
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "I48.2",
+              "display": "Chronic atrial fibrillation",
+              "userSelected": true
+            }
+          ],
+          "text": "Chronic atrial fibrillation"
+        },
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/condition-category",
+              "code": "diagnosis",
+              "display": "Diagnosis"
+            }
+          ],
+          "text": "Diagnosis"
+        },
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "onsetDateTime": "2020-09-18T18:58:35.000Z"
+      }
+    },
+    {
+      "fullUrl": "https://fhir-ehr-code.cerner.com/dstu2/ec2458f2-1e24-41c8-b71b-0e701af7583d/Condition/d2572567923",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "d2572567923",
+        "meta": {
+          "versionId": "2572567923",
+          "lastUpdated": "2020-09-18T19:00:16.000Z"
+        },
+        "text": {
+          "status": "generated",
+          "div": "\u003Cdiv\u003E\u003Cp\u003E\u003Cb\u003ECondition\u003C/b\u003E\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EPatient\u003C/b\u003E: PETERS, TIM A\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EDiagnosis\u003C/b\u003E: Chronic atrial fibrillation, Chronic atrial fibrillation\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EClinical Status\u003C/b\u003E: Active\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EVerification Status\u003C/b\u003E: Confirmed\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EOnset\u003C/b\u003E: Sep 18, 2020  7:00 P.M. UTC\u003C/p\u003E\u003C/div\u003E"
+        },
+        "patient": {
+          "reference": "Patient/12742400",
+          "display": "PETERS, TIM A"
+        },
+        "encounter": { "reference": "Encounter/97953530" },
+        "asserter": {
+          "reference": "Practitioner/12742069",
+          "display": "Portal, Portal"
+        },
+        "dateRecorded": "2020-09-18",
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "I48.2",
+              "display": "Chronic atrial fibrillation",
+              "userSelected": true
+            }
+          ],
+          "text": "Chronic atrial fibrillation"
+        },
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/condition-category",
+              "code": "diagnosis",
+              "display": "Diagnosis"
+            }
+          ],
+          "text": "Diagnosis"
+        },
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "onsetDateTime": "2020-09-18T19:00:15.000Z"
+      }
+    },
+    {
+      "fullUrl": "https://fhir-ehr-code.cerner.com/dstu2/ec2458f2-1e24-41c8-b71b-0e701af7583d/Condition/d2572741787",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "d2572741787",
+        "meta": {
+          "versionId": "2572741787",
+          "lastUpdated": "2020-11-18T23:10:17.000Z"
+        },
+        "text": {
+          "status": "generated",
+          "div": "\u003Cdiv\u003E\u003Cp\u003E\u003Cb\u003ECondition\u003C/b\u003E\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EPatient\u003C/b\u003E: PETERS, TIM A\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EDiagnosis\u003C/b\u003E: Acne erythematosa, Acne erythematosa\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EClinical Status\u003C/b\u003E: Active\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EVerification Status\u003C/b\u003E: Confirmed\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EOnset\u003C/b\u003E: Nov 18, 2020 11:10 P.M. UTC\u003C/p\u003E\u003C/div\u003E"
+        },
+        "patient": {
+          "reference": "Patient/12742400",
+          "display": "PETERS, TIM A"
+        },
+        "encounter": { "reference": "Encounter/97953530" },
+        "asserter": {
+          "reference": "Practitioner/12742069",
+          "display": "Portal, Portal"
+        },
+        "dateRecorded": "2020-11-18",
+        "code": {
+          "coding": [
+            {
+              "system": "http://e-imo.com/products/problem-it",
+              "code": "817",
+              "display": "Acne erythematosa",
+              "userSelected": false
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "398909004",
+              "display": "Rosacea (disorder)",
+              "userSelected": false
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "L71.9",
+              "display": "Rosacea, unspecified",
+              "userSelected": false
+            }
+          ],
+          "text": "Acne erythematosa"
+        },
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/condition-category",
+              "code": "diagnosis",
+              "display": "Diagnosis"
+            }
+          ],
+          "text": "Diagnosis"
+        },
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "onsetDateTime": "2020-11-18T23:10:17.000Z"
+      }
+    }
+  ]
+}
