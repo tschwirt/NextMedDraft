@@ -44,6 +44,7 @@
 
           var p = defaultPatient();
           p.birthdate = patient.birthDate;
+          p.age = calculateAge(p.birthdate);
           p.gender = gender;
           p.fname = fname;
           p.lname = lname;
@@ -114,6 +115,15 @@
     }
   }
 
+  function calculateAge(birthdate) {
+    if (typeof birthdate != 'Date') {
+      birthdate = new Date(birthdate);
+    }
+    var ageDifMs = Date.now() - birthdate.getTime();
+    var ageDate = new Date(ageDifMs); // miliseconds from epoch
+    return Math.abs(ageDate.getUTCFullYear() - 1970);
+  }
+
   window.drawVisualization = function(p) {
     $('#holder').show();
     $('#loading').hide();
@@ -121,6 +131,7 @@
     $('#lname').html(p.lname);
     $('#gender').html(p.gender);
     $('#birthdate').html(p.birthdate);
+    $('#age').html(p.birthdate);
     $('#height').html(p.height);
     $('#systolicbp').html(p.systolicbp);
     $('#diastolicbp').html(p.diastolicbp);
