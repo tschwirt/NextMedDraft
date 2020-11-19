@@ -1,6 +1,7 @@
 (function(window){
   window.extractData = function() {
     var ret = $.Deferred();
+    console.log(ret);
 
     function onError() {
       console.log('Loading error', arguments);
@@ -8,6 +9,7 @@
     }
 
     function onReady(smart)  {
+      console.log(smart);
       if (smart.hasOwnProperty('patient')) {
         var patient = smart.patient;
         var pt = patient.read();
