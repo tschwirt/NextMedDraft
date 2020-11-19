@@ -172,7 +172,7 @@
       let conditionText = document.createElement('td');
       conditionText.innerHTML = condition.text.div;
 
-      conditionRow.append(conditionText);
+      //conditionRow.append(conditionText);
       conditionTable.append(conditionRow);
       conditionDiv.append(conditionTable);
     });
