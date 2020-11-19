@@ -150,6 +150,8 @@
   window.displayConditions = function (c) {
     const conditionDiv = document.querySelector('div.conditions');
     conditionTable = document.createElement('table');
+
+    c.sort((a,b) => (a.dateRecorded <= b.dateRecorded) ? 1 : -1);
     c.forEach(condition => {
       let conditionRow = document.createElement('tr');
       let conditionName = document.createElement('td');
@@ -158,7 +160,7 @@
       conditionName.innerText = condition.code.text;
       dateRecorded.innerText = condition.dateRecorded;
 
-      conditionRow.append(conditionName, dateRecorded);
+      conditionRow.append(dateRecorded, conditionName);
 
       let codes = condition.code.coding;
       codes.forEach(code => {
@@ -168,7 +170,7 @@
       });
 
       let conditionText = document.createElement('td');
-      conditionText.innerHTML = condition.text;
+      conditionText.innerHTML = condition.text.div;
 
       conditionRow.append(conditionText);
       conditionTable.append(conditionRow);
